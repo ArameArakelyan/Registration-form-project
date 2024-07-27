@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Popins-Reg";
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+
+*{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.App{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  padding-top: 180px;
+  padding-bottom: 100px;
+  font-weight: 400;
+  font-family: "Popins-Reg";
+}
+
+.rowdiv{
+  width: 780px;
+  margin: 0 auto;
+}
+.regForm{
+  background-color: black;
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.inputform{
+  padding: 57px 65px 65px 65px;
+}
+.inputform>form{
+  width: 260px;
+}
+
+.h2{
+  width: 260px;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+.inputs{
+  position: relative;
+  margin-bottom: 33px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+.inp{
+  width: 100%;
+  background: 0 0;
+  padding: 5px 0;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  margin: 0;
+  font-family: inherit;
+}
+.inp::placeholder{
+  color: white;
+}
+
+.imgdiv{
+  width: 50%;
+  background-position:center center;
+  background-image: url(./images/photo.jpg); 
+  background-repeat: no-repeat;
+  background-size: 470px 585px;
+}
+
+.btndiv{
+  padding-top: 10px;
+}
+.btn{
+  color: white;
+  background-color: #57b846;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 33px;
+  cursor: pointer;
+  font-size: 18px;
+} 
