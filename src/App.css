@@ -18,6 +18,7 @@
   border: none;
   border-radius: 3px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .header{
@@ -37,6 +38,9 @@
   color: grey;
   font-size: 25px;
 }
+nav{
+  margin-right: 70px;
+}
 .menu-area{
   display: flex;
   align-items: center;
@@ -54,6 +58,11 @@
  padding: 3px 9px;
  margin-right: 20px;
 }
+.menu-cont>ul>li>a{
+  text-decoration: none;
+  color: #04284A;
+}
+
 .menu-cont>ul>li:hover{
   color: #2486CD;
 }
@@ -76,8 +85,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 90px;
+  padding-top: 120px;
+  padding-bottom: 130px;
 }
 
 .first-cont>h1{
@@ -88,8 +97,8 @@
   color: gray;
 }
 .first-cont>p{
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .box-cont{
   width: 100%;
@@ -101,11 +110,12 @@
 .box{
   width: 230px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 10px 15px;
+  padding: 30px 15px;
+  padding-bottom: 50px;
 }
 
 .box>ion-icon{
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 10px;
   color: #2486CD;

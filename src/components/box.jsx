@@ -1,6 +1,5 @@
 import "../App.css"
 
-
 function Box(items) {
     
     return(

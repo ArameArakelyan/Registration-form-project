@@ -2,14 +2,15 @@ import "../App.css"
 import Button from "./button"
 function Header() {
     let menu = [
-        <li className="selected">Home</li>,
-        <li>About</li>,
-        <li>Services</li>,
-        <li>Portfolio</li>,
-        <li>Team</li>,
-        <li>Pricing</li>,
-        <li>Drop Down</li>,
-        <li>Contact</li>]
+        {title:"Home", url:"#"},
+        {title:"About", url:"#"},
+        {title:"Services", url:"#"},
+        {title:"Portfolio", url:"#"},
+        {title:"Team", url:"#"},
+        {title:"Pricing", url:"#"},
+        {title:"Drop Down", url:"#"},
+        {title:"Contact", url:"#"},
+        ]
     return (
         <header className="header">
             <div className="header-cont">
@@ -22,7 +23,9 @@ function Header() {
                     <nav>
                         <div className="menu-cont">
                             <ul>
-                                {menu}
+                                {menu.map((el,i)=>{
+                                    return (<li key={i}><a href={el.url}>{el.title}</a></li>)
+                                })}
                             </ul>
                         </div>
                     </nav>

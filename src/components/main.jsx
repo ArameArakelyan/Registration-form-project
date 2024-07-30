@@ -3,6 +3,29 @@ import Button from "./button"
 import Box from "./box"
 
 function Main() {
+    let list = [
+        {
+            icon: "finger-print",
+            title: "Lorem ipsum",
+            text: "dolor sit amet, consectetur adipisicing elit. Quidem voluptates reiciendis"
+        },
+        {
+            icon: "git-branch",
+            title: "sit amet consectetur",
+            text: "adipisicing elit. Eaque ullam mollitia excepturi eum itaque minima enim."
+        },
+        {
+            icon: "globe",
+            title: "obcaecati molestiae ",
+            text: "quaerat delectus officiis commodi ipsam illum laboriosam quo hic!"
+        },
+        {
+            icon: "help",
+            title: "laborum asperiores",
+            text: "quam cumque alias obcaecati, tenetur vero corporis voluptatum "
+        }
+
+    ]
     return (
         <main className="main">
             <div className="cont">
@@ -13,25 +36,14 @@ function Main() {
                     <Button></Button>
                 </div>
                 <div className="box-cont">
-                    <Box 
-                    icon= "finger-print"
-                    title= "Lorem ipsum" 
-                    text="dolor sit amet, consectetur adipisicing elit. Quidem voluptates reiciendis"/>
-                    <Box
-                    icon="git-branch"
-                    title= "sit amet consectetur"
-                    text ="adipisicing elit. Eaque ullam mollitia excepturi eum itaque minima enim."
-                    />
-                    <Box
-                    icon= "globe"
-                    title= "obcaecati molestiae distinctio"
-                    text ="voluptatem, quasi, quaerat delectus officiis commodi ipsam illum laboriosam quo hic!"
-                    />
-                    <Box
-                    icon = "help"
-                    title = "Magnam, laborum asperiores"
-                    text = "quam cumque alias obcaecati, magni illo, tenetur vero corporis voluptatum "
-                    />
+                    {
+                        list.map((el) => {
+                            return (<Box 
+                                icon={el.icon}
+                                title={el.title}
+                                text={el.text} />)
+                        })
+                    }
                 </div>
             </div>
         </main>
