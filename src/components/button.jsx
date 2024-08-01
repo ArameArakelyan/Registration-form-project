@@ -1,8 +1,8 @@
 import "../App.css"
 
-function Button() {
+function Button(props) {
     return(
-        <button className="btn">Get Started</button>
+        <button className="btn">{props.text}</button>
     )
 }
 

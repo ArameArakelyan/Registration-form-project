@@ -30,7 +30,7 @@ function Header() {
                         </div>
                     </nav>
                     <div className="btndiv">
-                        <Button></Button>
+                        <Button text="Get Started"></Button>
                     </div>
                 </div>
             </div>
