@@ -11,18 +11,17 @@
   align-items: center;
 }
 .textarea{
-  border: 1px solid;
-  padding: 20px;
   width: 350px;
+  border: 1px solid;
+  padding: 30px;
 }
-
 .btn{
   width: 100px;
   height: 40px;
   font-size: 25px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 25px;
+  left: 25px;
 }
 /*
 .btndiv{
