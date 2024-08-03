@@ -2,12 +2,24 @@ import React from "react";
 import { useState } from "react";
 
 
-function Header(params) {
+function Header({ todos, setTodos }) {
+    const [value, setValue] = useState("")
 
-    return(
+    function handleSubmit(e) {
+        e.preventDefault()
+        setTodos([...todos, {id: Math.random(), title: value, isDone: true}])
+        console.log(todos);
+        setValue("")
+    }
+    function inputChange(e) {
+        setValue(e.target.value)
+    }
+    return (
         <header>
-            <input type="text" />
-            <button>Add</button>
+            <form onSubmit={handleSubmit}>
+                <input type="text" onChange={inputChange} value={value}/>
+                <button>Add</button>
+            </form>
         </header>
     )
 }

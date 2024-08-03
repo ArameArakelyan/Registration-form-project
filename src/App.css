@@ -17,4 +17,19 @@
   width: 400px;
   height: 400px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
