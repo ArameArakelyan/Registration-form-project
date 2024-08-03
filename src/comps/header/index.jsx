@@ -7,7 +7,7 @@ function Header({ todos, setTodos }) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        setTodos([...todos, {id: Math.random(), title: value, isDone: true}])
+        setTodos([...todos, {id: Math.random(), title: value, isDone: false}])
         console.log(todos);
         setValue("")
     }

@@ -11,9 +11,7 @@ function App() {
     { id: 3, title: "CSS", isDone: false },
   ])
   function clear() {
-    setTodos(todos.filter(todo=> {
-      return todo.isDone =false
-    }))
+    setTodos(todos.filter(todo=>  todo.isDone ===false))
 }
   return (
     <div className="App">
