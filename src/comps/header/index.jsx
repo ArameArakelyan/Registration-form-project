@@ -8,17 +8,16 @@ function Header({ todos, setTodos }) {
     function handleSubmit(e) {
         e.preventDefault()
         setTodos([...todos, {id: Math.random(), title: value, isDone: false}])
-        console.log(todos);
         setValue("")
     }
     function inputChange(e) {
         setValue(e.target.value)
     }
     return (
-        <header>
+        <header className="header">
             <form onSubmit={handleSubmit}>
-                <input type="text" onChange={inputChange} value={value}/>
-                <button>Add</button>
+                <input className="inp" type="text" placeholder="Write your todos..." onChange={inputChange} value={value}/>
+                <button className="addbtn">Add</button>
             </form>
         </header>
     )

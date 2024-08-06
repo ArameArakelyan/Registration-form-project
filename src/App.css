@@ -15,10 +15,12 @@
 
 .todo-cont{
   width: 400px;
-  height: 400px;
+  height: auto;
+  min-height: 200px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .item{
@@ -26,10 +28,55 @@
   align-items: center;
   justify-content: space-around;
   list-style: none;
+  font-size: 18px;
+  border-bottom: 0.5px solid;
 }
 
+.delbtn{
+  padding: 5px 7px;
+  border: 0;
+  background: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.inp{
+  width: 250px;
+}
+.addbtn{
+  font-size: 15px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(134, 134, 135);
+}
+.header{
+  display: flex;
+  margin: 10px 0;
+  padding-bottom: 0px;
+}
+.header>form{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.todo-list{
+  border-top: 0.5px solid;
+}
 .footer{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; 
+  padding: 10px 0;
+}
+
+.clrbtn{
+  background-color: rgb(134, 134, 135);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
 }

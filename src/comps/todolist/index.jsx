@@ -1,17 +1,11 @@
-import React from "react";
 import TodolistItem from "../todolist-item";
 
-function Todolist({ todos, setTodos }) {
-    function remove(id) {
-        setTodos(todos.filter((todo) => {
-           return id !== todo.id
-        }))
-    }
+function Todolist({ todos, checkMark, remove }) {
     return (
-        <ul>
+        <ul className="todo-list">
             {todos.map((todo) => {
                 return (
-                    <TodolistItem key={todo.id} todo={todo} remove={remove} />
+                    <TodolistItem key={todo.id} todo={todo} checkMark={checkMark} remove={remove} />
                 )
             })}
         </ul>
